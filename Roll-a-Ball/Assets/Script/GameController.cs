@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
     public GameObject winnerLabelObject;
     public void Update()
     {
+        // アイテムの残り個数をカウント
         int count = GameObject.FindGameObjectsWithTag("Item").Length;
         scoreLabel.text = count.ToString();
 
