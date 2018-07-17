@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     public UnityEngine.UI.Text scoreLabel;
-    public GameObject winnerLabelObject;
     public void Update()
     {
         // 獲得ポイントを表示
@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
 
         if (point == 0)
         {
-            winnerLabelObject.SetActive(true);
+            SceneManager.LoadScene("WinScene");
         }
     }
 }
