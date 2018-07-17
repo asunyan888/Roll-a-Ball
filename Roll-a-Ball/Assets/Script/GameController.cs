@@ -7,11 +7,11 @@ public class GameController : MonoBehaviour
     public GameObject winnerLabelObject;
     public void Update()
     {
-        // アイテムの残り個数をカウント
-        int count = GameObject.FindGameObjectsWithTag("Item").Length;
-        scoreLabel.text = count.ToString();
+        // 獲得ポイントを表示
+        int point = GameObject.FindGameObjectsWithTag("Item").Length;
+        scoreLabel.text = point.ToString();
 
-        if (count == 0)
+        if (point == 0)
         {
             winnerLabelObject.SetActive(true);
         }

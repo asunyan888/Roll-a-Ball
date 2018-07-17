@@ -4,14 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DangerWall : MonoBehaviour {
+    public GameObject loseLabelObject;
 
 	void OnCollisionEnter(Collision hit)
 	{
         if (hit.gameObject.CompareTag("Player"))
         {
-            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-            SceneManager.LoadScene(sceneIndex);
+            SceneManager.LoadScene("LoseScene");
             
         }
 		
