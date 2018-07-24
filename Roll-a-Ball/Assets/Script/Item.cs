@@ -9,7 +9,8 @@ public class Item : MonoBehaviour {
         // 接触対象がPlayerであれば
         if (hit.CompareTag ("Player"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 		
 	}

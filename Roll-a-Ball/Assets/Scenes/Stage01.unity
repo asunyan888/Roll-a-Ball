@@ -806,7 +806,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4ecd5b0c26d4c7e8bbaf417828225a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
   speed: 10
+  scoreLabel: {fileID: 247135934}
 --- !u!1001 &446475488
 Prefab:
   m_ObjectHideFlags: 0
@@ -1590,8 +1592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4df49d6213e4d08aa85a2b080b33ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreLabel: {fileID: 247135934}
-  winnerLabelObject: {fileID: 1381643008}
 --- !u!1 &1598156269
 GameObject:
   m_ObjectHideFlags: 0
