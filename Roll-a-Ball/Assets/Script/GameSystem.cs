@@ -20,4 +20,8 @@ public class GameSystem : MonoBehaviour {
         Application.Quit();
     #endif 
     }
+
+    public void GoHome(){
+        SceneManager.LoadScene("Title");
+    }
 }
